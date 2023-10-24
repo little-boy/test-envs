@@ -1,2 +1,9 @@
 # Jetbrains IDE files
 .idea
+
+# ignore everything in tmp
+tmp/*
+# but not the gitkeep, so that git keeps tmp folder into the repository
+!tmp/.gitkeep
+
+__pycache__
