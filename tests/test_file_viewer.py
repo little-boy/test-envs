@@ -1,5 +1,7 @@
 import unittest
 
+from utils.toto import add
+
 
 class TestFileViewerMethods(unittest.TestCase):
     def test_get_file_contents_when_path_doesnt_exist(self):
@@ -8,6 +10,9 @@ class TestFileViewerMethods(unittest.TestCase):
 
     def test_get_file_contents_with_multiple_files(self):
         self.assertTrue(True)
+
+    def test_toto(self):
+        self.assertEqual(add(2, 2), 4)
 
     ##
     # Bonus (start)
